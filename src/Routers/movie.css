@@ -1,0 +1,29 @@
+
+.container-id{
+    max-width: 40vh;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.post-id {
+    background-color: #fff;
+    border-radius: 4px;
+    color: #000;
+    padding: 1rem 0.5rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.post-id img {
+        max-width: 100%;
+}
+
+.content-id{
+   padding: 20px;
+}
+
+.content-id p {
+    padding: 10px;
+}

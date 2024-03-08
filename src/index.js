@@ -1,24 +1,17 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from './App';
-import {Movie} from './Routers/Movie'
-import { BrowserRouter, Routes, Router, Route} from "react-router-dom";
-
-import './styles/main.scss'
+import Movie from './Routers/Movie.jsx';
+import './styles/main.scss';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        <Route element={<App/>}>
-            <Route path='/' element={<App/>}/>
-            <Route path='/movie:id' element={<Movie/>}/>
-            <Route path='/' element={<App/>}/>
-        </Route>
+        <Route path="/" element={<App />}/>
+        <Route path="/movie/:id" element={<Movie />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
-
 );
-
-
